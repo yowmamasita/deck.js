@@ -16,9 +16,10 @@
   <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
   <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
   <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+  <link rel="stylesheet" media="screen" href="extensions/highlight/railscasts.css">
 
   <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+  <link rel="stylesheet" media="screen" href="themes/style/neon.css">
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
   <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
@@ -42,6 +43,11 @@
 ## Topic 1
 
 * Hello, World!
+
+
+    function go() {
+      alert("Hello, 世界");
+    }
 </section>
 
 <section class="slide">
@@ -79,11 +85,13 @@
 <script src="extensions/scale/deck.scale.js"></script>
 <script src="extensions/markdown/marked.min.js"></script>
 <script src="extensions/markdown/marked.convert.js"></script>
+<script src="extensions/highlight/highlight.pack.js"></script>
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
   $(function() {
     $.deck('.slide');
+    hljs.initHighlightingOnLoad();
   });
 </script>
 </body>
