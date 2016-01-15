@@ -4,6 +4,10 @@ html, body {
   margin:0;
 }
 
+p, ul {
+  font-size: 32px !important;
+}
+
 .deck-container {
   position:relative;
   min-height:100%;
